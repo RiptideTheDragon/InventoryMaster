@@ -1,16 +1,13 @@
-// Database 
-package database;
-
-import product;
+package main.java.Database;
 
 
-public class database {
+public class Database {
 	
 
 	public String databaseIpAddress; 
 
-	public database() {
-
+	public void database() {
+		connect();
 	}
 
 	public static void get(String name) {

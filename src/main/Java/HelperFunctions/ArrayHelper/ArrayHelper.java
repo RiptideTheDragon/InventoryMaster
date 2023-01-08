@@ -1,8 +1,8 @@
-// List 
-package listHelper;
+package main.java.HelperFunctions.ArrayHelper;
 
+import java.util.List;
 
-public class listHelper {
+public class ArrayHelper {
 
 
 	public static void find(String name) {

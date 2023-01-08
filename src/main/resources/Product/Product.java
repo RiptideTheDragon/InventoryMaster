@@ -1,5 +1,4 @@
-// Product Class
-package Product;
+package main.resources.Product;
 
 public class Product {
 
@@ -9,20 +8,20 @@ public class Product {
 	private String Description;
 	private Boolean DiscontinuedFlag;
 	private Integer UnitCount;
-	private Float PricePerUnit;
+	private Double PricePerUnit;
 
-	public Product(String Name, Boolean Discontinued) {
+	public Product(String Name, Boolean DiscontinuedFlag) {
 		this.Name = Name;
 		this.DiscontinuedFlag = DiscontinuedFlag;
 	}
 
-	public Product(String Name, String Description, Boolean Discontinued) {
+	public Product(String Name, String Description, Boolean DiscontinuedFlag) {
 		this.Name = Name;
 		this.Description = Description;
 		this.DiscontinuedFlag = DiscontinuedFlag;
 	}
 
-	public Product(String Name, String Description, String Discontinued, Integer UnitCount, Float PricePerUnit) {
+	public Product(String Name, String Description, Boolean DiscontinuedFlag, Integer UnitCount, Double PricePerUnit) {
 		this.Name = Name;
 		this.Description = Description;
 		this.DiscontinuedFlag = DiscontinuedFlag;
@@ -30,7 +29,7 @@ public class Product {
 		this.PricePerUnit = PricePerUnit;
 	}
 
-	private void setProductIdNumber(Integer IdNumber) {
+	public void setProductIdNumber(Integer IdNumber) {
 		this.IdNumber = IdNumber;
 	}
 
@@ -54,11 +53,11 @@ public class Product {
 		return this.Description;
 	}
 
-	public void setProductDiscontinued(Boolean Discontinued) {
+	public void setProductDiscontinuedFlag(Boolean Discontinued) {
 		this.DiscontinuedFlag = Discontinued;
 	}
 
-	public Boolean getProductDiscontinued() {
+	public Boolean getProductDiscontinuedFlag() {
 		return this.DiscontinuedFlag;
 	}
 
@@ -70,11 +69,11 @@ public class Product {
 		return this.UnitCount;
 	}
 
-	public void setPricePerUnit(Float PricePerUnit) {
+	public void setProductPricePerUnit(Double PricePerUnit) {
 		this.PricePerUnit = PricePerUnit;
 	}
 
-	public Float getPricePerUnit() {
+	public Double getProductPricePerUnit() {
 		return this.PricePerUnit ;
 	}
 

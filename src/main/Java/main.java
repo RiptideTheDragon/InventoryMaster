@@ -1,8 +1,8 @@
-// Main
+package main.java;
 
-public class BaseJavaProgram {
+public class main {
 
-	public static void main(String[] args) {
+	public main(String[] args) {
 		System.out.println("Startup Sequence");
 	}
 
